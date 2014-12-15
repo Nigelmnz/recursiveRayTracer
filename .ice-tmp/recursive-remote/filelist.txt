@@ -1,0 +1,2 @@
+.ice-tmp/recursive-remote/osx-x86_64-clang++5.1/DEBUG/source/App.o
+.ice-tmp/recursive-remote/osx-x86_64-clang++5.1/DEBUG/source/RayTracer.o

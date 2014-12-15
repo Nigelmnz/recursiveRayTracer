@@ -1,0 +1,343 @@
+
+/* -*- c++ -*- */
+{ 
+    entities = { 
+        backwall = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 7.27728, -3.86112, 90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        backwall_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 6.17181, -12.4304, 90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        ball1 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.05616, -0.378514, -5.01642 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.05616, -0.378514, -6.56275 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(7.61412, -0.378514, -5.01642 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.15756, -0.378514, -5.01642 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(10.7111, -0.378514, -5.01642 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(12.2931, -0.378514, -5.01642 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(10.7111, -0.378514, -6.55499 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(12.2884, -0.378514, -6.55499 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_01 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(10.7111, -0.378514, -8.07443 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(12.2444, -0.378514, -9.76641, 0.78486 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(12.2662, -0.378514, -8.17697, 0.78486, -3.92169 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0_0_01 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(12.2221, -0.378514, -11.3911, 0.78486 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0_0_01_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(10.6542, -0.164321, -11.3696, 0.78486, -7.50954e-08, -9.8291 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_01_0_0_01_0_0_01_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(10.6781, -0.164321, -9.62777, 0.78486, -7.50954e-08, -9.8291 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.05616, -0.378514, -8.074 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.05616, -0.378514, -9.5618 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.05616, -0.378514, -11.0813 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.03822, -0.378514, -8.05662 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.12868, -0.378514, -6.51643 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_01 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.03822, -0.378514, -9.58872 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_01_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.03822, -0.380537, -11.259, 0, -0.0693987 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(7.57978, -0.517113, -11.3323, 0, 5.07923 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(7.52311, -0.708634, -9.48991, -3.58168, 6.04645, -0.377763 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(7.42356, -0.87743, -7.89947, -3.58168, 6.04645, -0.377763 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        ball1_0_0_0_0_0_0_0_0_0_0 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(7.45898, -1.03718, -6.39423, -3.58168, 6.04645, -0.377763 ); 
+            model = "ball"; 
+            visible = true; 
+        }; 
+        
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = true; 
+                farBlurRadiusFraction = 0.005; 
+                farBlurryPlaneZ = -100; 
+                farSharpPlaneZ = -40; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "NONE"; 
+                nearBlurRadiusFraction = 0.015; 
+                nearBlurryPlaneZ = -0.25; 
+                nearSharpPlaneZ = -1; 
+            }; 
+            
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                antialiasingHighQuality = true; 
+                bloomRadiusFraction = 0.009; 
+                bloomStrength = 0.2; 
+                debugZoom = 1; 
+                gamma = 2.2; 
+                sensitivity = 1; 
+                toneCurve = Spline { 
+                    control = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.05; 
+                vignetteSizeFraction = 0.17; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 5 ); 
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 0.5; 
+                enabled = false; 
+                exposureFraction = 0.75; 
+                maxBlurDiameterFraction = 0.1; 
+                numSamples = 27; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -150; 
+                fovDegrees = 90; 
+                fovDirection = "HORIZONTAL"; 
+                nearPlaneZ = -0.15; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            
+            visualizationScale = 1; 
+        }; 
+        
+        ground = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, -2.77207, -4.3, 90, -0, -90 ); 
+            model = "ground"; 
+            visible = true; 
+        }; 
+        
+        light1 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(620 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(11.8723, 6.03593, -8.48617, 57.6732, -80.4291, -53.7218 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 80; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        sidewall = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(13.4721, 1.55089, -4.3, 180, 90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        sidewall2 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(4.87164, 8.34214, -9.09941, -0, -90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        skybox = Skybox { 
+            texture = "cubemap/whiteroom/whiteroom-*.png"; 
+        }; 
+        
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.001; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            temporalFilterSettings = TemporalFilter::Settings { 
+                alpha = 0; 
+                falloffEndDistance = 0.07; 
+                falloffStartDistance = 0.05; 
+            }; 
+            
+            temporallyVarySamples = false; 
+            useDepthPeelBuffer = false; 
+            useNormalBuffer = false; 
+            useNormalsInBlur = false; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        backwall = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        glossy = Color4(0.8, 0.9, 1, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+        ball = ArticulatedModel::Specification { 
+            filename = "ifs/sphere.ifs"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        etaReflect = 1; 
+                        etaTransmit = 1.3; 
+                        glossy = Color4(0.2, 0.2, 0.2, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                        refractionHint = "DYNAMIC_FLAT"; 
+                        transmissive = Color3(0.6 ); 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 0.5, 0.5 ) ) }; 
+            
+            scale = 1.5; 
+        }; 
+        
+        ground = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        emissive = Color3(0.5, 1, 0.5 ); 
+                        lambertian = Color3(0 ); 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+        sidewall = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+    }; 
+    
+    name = "ballpit"; 
+} 

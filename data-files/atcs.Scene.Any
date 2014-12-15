@@ -1,0 +1,229 @@
+
+/* -*- c++ -*- */
+{ 
+    entities = { 
+        building = VisibleEntity { 
+            frame = Vector3(0, 0, 0 ); 
+            model = "buildingModel"; 
+            visible = true; 
+        }; 
+        
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = true; 
+                farBlurRadiusFraction = 0.01; 
+                farBlurryPlaneZ = -80; 
+                farSharpPlaneZ = -60; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "ARTIST"; 
+                nearBlurRadiusFraction = 0.02; 
+                nearBlurryPlaneZ = -2; 
+                nearSharpPlaneZ = -3; 
+            }; 
+            
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                antialiasingHighQuality = true; 
+                bloomRadiusFraction = 0.009; 
+                bloomStrength = 0.105567; 
+                debugZoom = 1; 
+                gamma = 2.1; 
+                sensitivity = 1.31111; 
+                toneCurve = Spline { 
+                    control = ( 0, 0.0787234, 0.306383, 0.808511, 0.925532 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time = ( 0, 0.169565, 0.32174, 0.743478, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.08; 
+                vignetteSizeFraction = 0.16; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            frame = CFrame::fromXYZYPRDegrees(19.5, -2.4, 14.9, 73.2, 18.9 ); 
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 1; 
+                enabled = true; 
+                exposureFraction = 0.25; 
+                maxBlurDiameterFraction = 0.06; 
+                numSamples = 11; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -200; 
+                fovDegrees = 50; 
+                fovDirection = "VERTICAL"; 
+                nearPlaneZ = -0.1; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            
+            visualizationScale = 1; 
+        }; 
+        
+        pitcher = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(50.5886, 0.473956, -12.8132, -53.5119 ); 
+            model = "pitcher0"; 
+            visible = true; 
+        }; 
+        
+        pitcher1 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(-11.2141, -3.84956, -13.1255 ); 
+            model = "pitcher11"; 
+            visible = true; 
+        }; 
+        
+        skybox = Skybox { 
+            texture = "cubemap/noonclouds/noonclouds_*.png"; 
+        }; 
+        
+        sun = Light { 
+            attenuation = ( 0, 0, 1 ); 
+            bulbPower = Power3(1e+06 ); 
+            castsShadows = true; 
+            enabled = true; 
+            farPlaneZLimit = -180; 
+            frame = CFrame::fromXYZYPRDegrees(-64.0886, 134.459, -53.9529, -126.803, -59.2916, 130.868 ); 
+            nearPlaneZLimit = -130; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapBias = 0.05; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 15; 
+            type = "SPOT"; 
+        }; 
+        
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.595059; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            temporalFilterSettings = TemporalFilter::Settings { 
+                alpha = 0; 
+                falloffEndDistance = 0.07; 
+                falloffStartDistance = 0.05; 
+            }; 
+            
+            temporallyVarySamples = false; 
+            useDepthPeelBuffer = true; 
+            useNormalBuffer = true; 
+            useNormalsInBlur = true; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        environmentMap = Texture::Specification { 
+            encoding = Texture::Encoding { 
+                readMultiplyFirst = 0.7; 
+            }; 
+            
+            filename = "cubemap/uffizi/uffizi*.jpg"; 
+        }; 
+        
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        buildingModel = ArticulatedModel::Specification { 
+            filename = "model/atcs/atcs.pk3/maps/atcs.bsp"; 
+            preprocess = 
+            /* Quake models tend to be missing backfaces when viewed from "outside" the map, which causes shadow casting problems */
+            ( 
+                setTwoSided(all(), true ) ); 
+            
+        }; 
+        
+        pitcher0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = inf; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "/Users/nigel/Downloads/pitcher.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            scale = 0.0491823; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+        pitcher11 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = inf; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "/Users/nigel/Downloads/pitcher.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            preprocess = ( 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        etaReflect = 1; 
+                        etaTransmit = 1.3; 
+                        glossy = Color4(0.2, 0.2, 0.2, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                        refractionHint = "DYNAMIC_FLAT"; 
+                        transmissive = Color3(0.6 ); 
+                    } ) ); 
+            
+            scale = 0.0491823; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+    }; 
+    
+    name = "G3D atcscustom"; 
+    skybox = Skybox { 
+        constant = 1; 
+        texture = "cubemap/noonclouds/noonclouds_*.png"; 
+    }; 
+    
+} 

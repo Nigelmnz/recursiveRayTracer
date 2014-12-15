@@ -1,0 +1,300 @@
+
+/* -*- c++ -*- */
+{ 
+    entities = { 
+        boxS = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(4.9745, -0.378514, -0.280733 ); 
+            model = "smallSphere"; 
+            visible = true; 
+        }; 
+        
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = true; 
+                farBlurRadiusFraction = 0.005; 
+                farBlurryPlaneZ = -100; 
+                farSharpPlaneZ = -40; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "NONE"; 
+                nearBlurRadiusFraction = 0.015; 
+                nearBlurryPlaneZ = -0.25; 
+                nearSharpPlaneZ = -1; 
+            }; 
+            
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                antialiasingHighQuality = true; 
+                bloomRadiusFraction = 0.009; 
+                bloomStrength = 0.2; 
+                debugZoom = 1; 
+                gamma = 2.2; 
+                sensitivity = 1; 
+                toneCurve = Spline { 
+                    control = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.05; 
+                vignetteSizeFraction = 0.17; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 5 ); 
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 0.5; 
+                enabled = false; 
+                exposureFraction = 0.75; 
+                maxBlurDiameterFraction = 0.1; 
+                numSamples = 27; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -150; 
+                fovDegrees = 90; 
+                fovDirection = "HORIZONTAL"; 
+                nearPlaneZ = -0.15; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            
+            visualizationScale = 1; 
+        }; 
+        
+        skybox = Skybox { 
+            texture = "cubemap/whiteroom/whiteroom-*.png"; 
+        }; 
+        
+        light1 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(240 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(5, 1.92, 0, 0, -90, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light2 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(240 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(5, 1.92, 0, 0, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light3 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(240 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(5, 1.92, 0, 90, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light4 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(240 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(5, 1.92, 0, -90, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light5 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(240); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(5, 1.92, 0, 180, 0, 180 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        wallB = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 0, -4.32279, 90 ); 
+            model = "squishedCube"; 
+            visible = true; 
+        }; 
+        
+        wallD = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, -3.74489, 0, 0, -0, 90 ); 
+            model = "squishedCube3"; 
+            visible = true; 
+        }; 
+        
+        wallF = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 0, 4.68175, 90 ); 
+            model = "squishedCube"; 
+            visible = true; 
+        }; 
+        
+        wallL = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(0.361706, 0, 0 ); 
+            model = "squishedCube4"; 
+            visible = true; 
+        }; 
+        
+        wallR = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(9.35951, 0, 0 ); 
+            model = "squishedCube2"; 
+            visible = true; 
+        }; 
+        
+        wallU = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 4.19675, 0, 0, -0, 90 ); 
+            model = "squishedCube3"; 
+            visible = true; 
+        }; 
+        
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.001; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            temporalFilterSettings = TemporalFilter::Settings { 
+                alpha = 0; 
+                falloffEndDistance = 0.07; 
+                falloffStartDistance = 0.05; 
+            }; 
+            
+            temporallyVarySamples = false; 
+            useDepthPeelBuffer = false; 
+            useNormalBuffer = false; 
+            useNormalsInBlur = false; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        bigCube = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.7, 1.2, 0.7 ) ) }; 
+            
+        }; 
+        
+        cubeModel = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ) }; 
+            
+        }; 
+        
+        smallCube = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 0.5, 0.5 ) ) }; 
+            
+        }; 
+        
+        smallSphere = ArticulatedModel::Specification { 
+            filename = "ifs/sphere.ifs"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        etaReflect = 1; 
+                        etaTransmit = 1.3; 
+                        glossy = Color4(0.2, 0.2, 0.2, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                        refractionHint = "DYNAMIC_FLAT"; 
+                        transmissive = Color3(0.6 ); 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 0.5, 0.5 ) ) }; 
+            
+        }; 
+        
+        squishedCube = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        glossy = Color4(0.6, 0.6, 1, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 10, 10 ) ) }; 
+            
+        }; 
+        
+        squishedCube2 = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        glossy = Color4(0.7, 0.7, 0.7, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 10, 10 ) ) }; 
+            
+        }; 
+        
+        squishedCube3 = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(0.7, 0.7, 0.7 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 10, 10 ) ) }; 
+            
+        }; 
+
+        squishedCube4 = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        glossy = Color4(1, 0.6, 0.6, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                    } ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 10, 10 ) ) }; 
+            
+        }; 
+        
+    }; 
+    
+    name = "Mirrorbox"; 
+} 

@@ -1,0 +1,329 @@
+
+/* -*- c++ -*- */
+{ 
+    entities = { 
+        Modern_Table = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(4.82996, -2.52967, -1.16309 ); 
+            model = "Modern_Table0"; 
+            visible = true; 
+        }; 
+        
+        backwall = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, 0, 0.906053, 90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        beethoven = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(6.18521, -0.246823, -1.13864, 47 ); 
+            model = "beethoven0"; 
+            visible = true; 
+        }; 
+        
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = true; 
+                farBlurRadiusFraction = 0.005; 
+                farBlurryPlaneZ = -100; 
+                farSharpPlaneZ = -40; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "NONE"; 
+                nearBlurRadiusFraction = 0.015; 
+                nearBlurryPlaneZ = -0.25; 
+                nearSharpPlaneZ = -1; 
+            }; 
+            
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                antialiasingHighQuality = true; 
+                bloomRadiusFraction = 0.009; 
+                bloomStrength = 0.2; 
+                debugZoom = 1; 
+                gamma = 2.2; 
+                sensitivity = 1; 
+                toneCurve = Spline { 
+                    control = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.05; 
+                vignetteSizeFraction = 0.17; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 5 ); 
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 0.5; 
+                enabled = false; 
+                exposureFraction = 0.75; 
+                maxBlurDiameterFraction = 0.1; 
+                numSamples = 27; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -150; 
+                fovDegrees = 90; 
+                fovDirection = "HORIZONTAL"; 
+                nearPlaneZ = -0.15; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            
+            visualizationScale = 1; 
+        }; 
+        
+        ground = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(5, -2.77207, -4.3, 90, -0, -90 ); 
+            model = "ground"; 
+            visible = true; 
+        }; 
+        
+        light1 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(620 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(4.78231, 1.20446, -4.71618, -165.534, -21.1887, 176.713 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 80; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        pitcher = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(4.4749, -0.723626, -1.14053, 168.098 ); 
+            model = "pitcher0"; 
+            visible = true; 
+        }; 
+        
+        sidewall = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(14.7374, -2.8, -4.3, 180, 90 ); 
+            model = "backwall"; 
+            visible = true; 
+        }; 
+        
+        sidewall2 = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(-4.8, -2.8, -9.09941, -0, -90 ); 
+            model = "sidewall"; 
+            visible = true; 
+        }; 
+        
+        skybox = Skybox { 
+            texture = "cubemap/whiteroom/whiteroom-*.png"; 
+        }; 
+        
+        teapot = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(3.14342, -0.793802, -1.48107, 156.365 ); 
+            model = "teapot0"; 
+            visible = true; 
+        }; 
+        
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.001; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            temporalFilterSettings = TemporalFilter::Settings { 
+                alpha = 0; 
+                falloffEndDistance = 0.07; 
+                falloffStartDistance = 0.05; 
+            }; 
+            
+            temporallyVarySamples = false; 
+            useDepthPeelBuffer = false; 
+            useNormalBuffer = false; 
+            useNormalsInBlur = false; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        Modern_Table0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = 1.#INF; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "/models/Modern_Table2.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            scale = 0.0255556; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+        backwall = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(0.4, 0.4, 0.6 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+        beethoven0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = 1.#INF; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "ifs/beethoven.ifs"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            scale = 2.5; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+        ground = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+        pitcher0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = 1.#INF; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "models/pitcher.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            preprocess = ( 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        etaReflect = 1; 
+                        etaTransmit = 1.3; 
+                        glossy = Color4(0.2, 0.2, 0.2, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                        refractionHint = "DYNAMIC_FLAT"; 
+                        transmissive = Color3(0.6 ); 
+                    } ) ); 
+            
+            scale = 0.0591823; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+        sidewall = ArticulatedModel::Specification { 
+            filename = "model/cube/cube.obj"; 
+            preprocess = { 
+                setMaterial(all(), Color3(1, 1, 1 ) ); 
+                transformGeometry(all(), Matrix4::scale(0.5, 20, 20 ) ) }; 
+            
+        }; 
+        
+        teapot0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = 1.#INF; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "model/teapot/teapot.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            preprocess = ( 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        glossy = Color4(0.9, 0.9, 0.7, mirror() ); 
+                        lambertian = Color3(0 ); 
+                        mirrorHint = "STATIC_PROBE"; 
+                    } ) ); 
+            
+            scale = 0.00848565; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+    }; 
+    
+    name = "studio"; 
+} 

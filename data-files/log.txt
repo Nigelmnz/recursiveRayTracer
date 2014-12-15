@@ -1,0 +1,432 @@
+Application Log
+Start: Tue Sep 30 21:28:12 2014
+
+Initializing System::findDataFile took 0.001183s
+
+Entering GApp::GApp()
+cwd = /Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files
+System::setAppDataDir("/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files")
+Initializing System::findDataFile took 0.000629s
+Setting video mode
+Setting initial rendering state.
+Done setting initial state.
+104 ImageFormats:
+              Format  Readable    Writeable
+                  L8  No          No 
+                 L16  No          No 
+                L16F  No          No 
+                L32F  No          No 
+                  A8  No          No 
+                 A16  No          No 
+                A16F  No          No 
+                A32F  No          No 
+                 LA4  No          No 
+                 LA8  No          No 
+                LA16  No          No 
+               LA16F  No          No 
+               LA32F  No          No 
+                RGB5  Yes         No 
+              RGB5A1  Yes         No 
+                RGB8  Yes         No 
+               RGB10  Yes         No 
+             RGB10A2  Yes         No 
+               RGB16  Yes         No 
+              RGB16F  Yes         No 
+              RGB32F  Yes         No 
+          R11G11B10F  Yes         No 
+             RGB9E5F  Yes         No 
+               RGB8I  Yes         No 
+              RGB8UI  Yes         No 
+              RGBA8I  Yes         No 
+             RGBA8UI  Yes         No 
+          RGB8_SNORM  Yes         No 
+         RGBA8_SNORM  Yes         No 
+         RGB16_SNORM  Yes         No 
+        RGBA16_SNORM  Yes         No 
+                BGR8  Yes         No 
+               BGRA8  Yes         No 
+                  R8  Yes         No 
+                 R8I  Yes         No 
+                R8UI  Yes         No 
+            R8_SNORM  Yes         No 
+                 R16  Yes         No 
+                R16I  Yes         No 
+               R16UI  Yes         No 
+           R16_SNORM  Yes         No 
+                R16F  Yes         No 
+                R32I  Yes         No 
+               R32UI  Yes         No 
+                 RG8  Yes         No 
+                RG8I  Yes         No 
+               RG8UI  Yes         No 
+           RG8_SNORM  Yes         No 
+                RG16  Yes         No 
+               RG16I  Yes         No 
+              RG16UI  Yes         No 
+          RG16_SNORM  Yes         No 
+               RG16F  Yes         No 
+               RG32I  Yes         No 
+              RG32UI  Yes         No 
+                R32F  Yes         No 
+               RG32F  Yes         No 
+               RGBA8  Yes         No 
+              RGBA16  Yes         No 
+             RGBA16F  Yes         No 
+             RGBA32F  Yes         No 
+             RGBA16I  Yes         No 
+            RGBA16UI  Yes         No 
+              RGB32I  Yes         No 
+             RGB32UI  Yes         No 
+             RGBA32I  Yes         No 
+            RGBA32UI  Yes         No 
+               RGBA4  Yes         No 
+               RGBA2  Yes         No 
+       YUV420_PLANAR  No          No 
+              YUV422  No          No 
+              YUV444  No          No 
+            RGB_DXT1  Yes         No 
+           RGBA_DXT1  Yes         No 
+           RGBA_DXT3  Yes         No 
+           RGBA_DXT5  Yes         No 
+               SRGB8  Yes         No 
+              SRGBA8  Yes         No 
+                 SL8  No          No 
+                SLA8  No          No 
+           SRGB_DXT1  Yes         No 
+          SRGBA_DXT1  Yes         No 
+          SRGBA_DXT3  Yes         No 
+          SRGBA_DXT5  Yes         No 
+             DEPTH16  Yes         No 
+             DEPTH24  Yes         No 
+             DEPTH32  Yes         No 
+            DEPTH32F  Yes         No 
+            STENCIL1  No          No 
+            STENCIL4  No          No 
+            STENCIL8  No          No 
+           STENCIL16  No          No 
+    DEPTH24_STENCIL8  Yes         No 
+
+Capability    Minimum   Desired   Received  Ok?
+-------------------------------------------------
+* RENDER DEVICE 
+Depth         16 bits   24 bits   24 bits   ok
+Stencil        8 bits    8 bits    8 bits   ok
+Alpha                              8 bits   ok
+Red                                8 bits   ok
+Green                              8 bits   ok
+Blue                               8 bits   ok
+FSAA                       1     1    ok
+Width                 1280 pixels           ok
+Height                 720 pixels           ok
+Mode                   Windowed             ok
+
+This driver will NOT support G3D 9.00:
+GLSL version 3.30                   yes - GLSL version on this driver is 4.10
+GPU Supports OpenGL 3.3 or later    yes - OpenGL version on this driver is 4.1
+         GL_ARB_seamless_cube_map   NO - Required for G3D 9.0!
+            GL_ARB_sample_shading   yes - Optional
+
+
+Done initializing RenderDevice.
+NetworkDevice: Ignored adapter bridge0 because ip = 0
+NetworkDevice: Ignored adapter en1 because ip = 0
+NetworkDevice: Ignored adapter en2 because ip = 0
+NetworkDevice: Ignored adapter p2p0 because ip = 0
+System = { 
+    App { 
+        Name = "/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/build/recursive-remoted"
+        cwd = "/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files"
+    } 
+    
+    OS { 
+        Name = "OS X 10.9.4"
+    } 
+    
+    CPU { 
+        Vendor = "Intel"
+        Architecture = "Intel 80486"
+        hasCPUID = Yes 
+        hasMMX = No 
+        hasSSE = No 
+        hasSSE2 = No 
+        hasSSE3 = No 
+        has3DNow = No 
+        hasRDTSC = No 
+        numCores = 8 
+    } 
+    
+    G3D { 
+        Link version = 100002 
+        Compile version = "G3D Innovation Engine 10.00 beta 2, 64-bit (Debug)"
+        G3D10DATA = "/System/Library/G3D10/data"
+    } 
+    
+    GPU = { 
+        Chipset = "NVIDIA GeForce GT 750M OpenGL Engine;"
+        Vendor = "NVIDIA Corporation;"
+        Driver = "Unknown;"
+        OpenGL version = "4.1 NVIDIA-8.26.26 310.40.45f01;"
+        Textures = 16 ;
+        Texture coordinates = 1412708216 ;
+        Texture units = 1412708216 ;
+        GL_MAX_TEXTURE_SIZE = 16384 ;
+        GL_MAX_CUBE_MAP_TEXTURE_SIZE = 16384 ;
+        GL_MAX_COLOR_ATTACHMENTS = 8 ;
+    } ; 
+    
+    Window = { 
+        API = "GLFW;"
+        Version = "3.1.0 Cocoa NSGL chdir menubar;"
+        
+        In focus = false; 
+        Centered = true; 
+        Framed = true; 
+        Visible = true; 
+        Resizable = false; 
+        Full screen = false; 
+        Top = 0 ;
+        Left = 0 ;
+        Width = 1280 ;
+        Height = 720 ;
+        Refresh rate = 85 ;
+        
+        Alpha bits = 0 ;
+        Red bits = 8 ;
+        Green bits = 8 ;
+        Blue bits = 8 ;
+        Depth bits = 24 ;
+        Stencil bits = 8 ;
+        Asynchronous = true; 
+        Stereo = false; 
+        FSAA samples = 1 ;
+        GL extensions = [ GL_ARB_sample_shading,
+             GL_ARB_sampler_objects,
+             GL_ARB_transform_feedback2,
+             GL_APPLE_row_bytes,
+             GL_ARB_gpu_shader5,
+             GL_EXT_texture_sRGB_decode,
+             GL_EXT_texture_compression_s3tc,
+             GL_APPLE_flush_render,
+             GL_ARB_shader_bit_encoding,
+             GL_ARB_gpu_shader_fp64,
+             GL_ARB_texture_buffer_object_rgb32,
+             GL_ARB_occlusion_query2,
+             GL_ARB_vertex_type_2_10_10_10_rev,
+             GL_ARB_ES2_compatibility,
+             GL_EXT_framebuffer_multisample_blit_scaled,
+             GL_EXT_debug_label,
+             GL_ARB_separate_shader_objects,
+             GL_ARB_transform_feedback3,
+             GL_APPLE_container_object_shareable,
+             GL_ARB_texture_gather,
+             GL_EXT_texture_filter_anisotropic,
+             GL_ARB_timer_query,
+             GL_ARB_vertex_attrib_64bit,
+             GL_ARB_texture_storage,
+             GL_ARB_texture_rgb10_a2ui,
+             GL_ARB_instanced_arrays,
+             GL_ARB_internalformat_query,
+             GL_ARB_draw_buffers_blend,
+             GL_APPLE_client_storage,
+             GL_EXT_debug_marker,
+             GL_ARB_explicit_attrib_location,
+             GL_ARB_blend_func_extended,
+             GL_EXT_depth_bounds_test,
+             GL_NV_texture_barrier,
+             GL_APPLE_rgb_422,
+             GL_ARB_draw_indirect,
+             GL_ATI_texture_mirror_once,
+             GL_ARB_shading_language_include,
+             GL_ARB_texture_swizzle,
+             GL_ARB_texture_cube_map_array,
+             GL_ARB_viewport_array,
+             GL_ARB_texture_query_lod,
+             GL_ARB_shader_subroutine,
+             GL_EXT_texture_mirror_clamp,
+             GL_ARB_tessellation_shader,
+             GL_APPLE_object_purgeable,
+             GL_APPLE_texture_range ]; 
+    }; 
+    
+    Network = { 
+        Adapter0 ={ 
+            hostname = ";"
+            name = "en0;"
+            ip = "137.165.163.149"; 
+            subnet = "255.255.240.  0"; 
+            broadcast = "137.165.175.255"; 
+            mac = "b8:e8:56:48:18:ac"; 
+        }; 
+    }; 
+    
+    
+    }; 
+
+Entering GApp::loadFont("console-small.fnt")
+Found "console-small.fnt" at "/System/Library/G3D10/data/font/console-small.fnt"
+Done GApp::loadFont(...)
+Done GApp::GApp()
+
+Found scenes:
+  "ballpit" (./ballpit.scn.any)
+  "Mirrorbox" (./mirrorbox.scn.any)
+  "studio" (./studio.scn.any)
+  "G3D atcscustom" (./atcs.Scene.Any)
+  "G3D Cornell Boxmirror" (./CornellBox.Scene.Any)
+  "MythicalSponza" (./mythicalsponza.Scene.Any)
+  "G3D atcs" (/System/Library/G3D10/data/scene/atcs.Scene.Any)
+  "G3D Cornell Box (Empty CO)" (/System/Library/G3D10/data/scene/CornellBox-empty-cyan-orange.Scene.Any)
+  "G3D Cornell Box (Glossy)" (/System/Library/G3D10/data/scene/CornellBox-glossy.Scene.Any)
+  "G3D Cornell Box (Mirror)" (/System/Library/G3D10/data/scene/CornellBox-mirror.Scene.Any)
+  "G3D Cornell Box (Spheres)" (/System/Library/G3D10/data/scene/CornellBox-spheres.Scene.Any)
+  "G3D Cornell Box (Water)" (/System/Library/G3D10/data/scene/CornellBox-water.Scene.Any)
+  "G3D Cornell Box" (/System/Library/G3D10/data/scene/CornellBox.Scene.Any)
+  "G3D Feature Test" (/System/Library/G3D10/data/scene/featureTest.Scene.Any)
+  "G3D Heightfield" (/System/Library/G3D10/data/scene/heightfield.Scene.Any)
+  "G3D Minecraft" (/System/Library/G3D10/data/scene/minecraft.Scene.Any)
+  "G3D Motion" (/System/Library/G3D10/data/scene/motion.Scene.Any)
+  "G3D Opening Door" (/System/Library/G3D10/data/scene/openingDoor.Scene.Any)
+  "G3D Seymour" (/System/Library/G3D10/data/scene/seymour.Scene.Any)
+  "G3D Sibenik" (/System/Library/G3D10/data/scene/sibenik.Scene.Any)
+  "G3D Sponza" (/System/Library/G3D10/data/scene/sponza.Scene.Any)
+  "G3D Sponza White" (/System/Library/G3D10/data/scene/sponzaWhite.Scene.Any)
+
+
+: WARNING: 5:15: extension 'GL_ARB_shader_atomic_counters' is not supported
+: WARNING: 5:16: extension 'GL_ARB_shader_image_load_store' is not supported
+
+: WARNING: 5:15: extension 'GL_ARB_shader_atomic_counters' is not supported
+: WARNING: 5:16: extension 'GL_ARB_shader_image_load_store' is not supported
+
+
+
+
+
+
+
+
+
+WARNING: Output of vertex shader 'texcoord1' not read by fragment shader
+
+WARNING: Output of vertex shader 'texcoord1' not read by fragment shader
+
+
+WARNING: Output of vertex shader 'g3d_TexCoord' not read by fragment shader
+
+
+WARNING: Output of vertex shader 'texcoord1' not read by fragment shader
+WARNING: Output of vertex shader 'wsPosition' not read by fragment shader
+
+WARNING: Output of vertex shader 'texcoord1' not read by fragment shader
+
+
+WARNING: Output of vertex shader 'g3d_TexCoord' not read by fragment shader
+
+WARNING: Output of vertex shader 'g3d_TexCoord' not read by fragment shader
+
+
+
+
+_____________________________________________________
+
+    ###    Files Used    ###
+
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-NY.png
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./mythicalsponza.Scene.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_blur.vrt
+/System/Library/G3D10/data/shader/unlit.pix
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-NZ.png
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_render.vrt
+/System/Library/G3D10/data/model/cube/cube.obj
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_refract.vrt
+/System/Library/G3D10/data/shader/GFont/GFont_render.pix
+/System/Library/G3D10/data/model/truckwheel/truckwheel.ArticulatedModel.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_blur.pix
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_depthOnlyWithAlpha.pix
+/System/Library/G3D10/data/shader/GFont/GFont_render.vrt
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_AO.vrt
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_modulateBackground.pix
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./CornellBox.Scene.Any
+/System/Library/G3D10/data/font/greek.fnt
+/System/Library/G3D10/data/material/sand/sand.UniversalMaterial.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_minify.pix
+/System/Library/G3D10/data/font/arial.fnt
+/System/Library/G3D10/data/shader/UniversalMaterial/UniversalMaterial.glsl
+/System/Library/G3D10/data/scene/sibenik.Scene.Any
+/System/Library/G3D10/data/scene/openingDoor.Scene.Any
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/.
+/System/Library/G3D10/data/material/chrome/chrome.UniversalMaterial.Any
+/System/Library/G3D10/data/material/rustymetal/rustymetal.UniversalMaterial.Any
+/System/Library/G3D10/data/gui/osx-10.7.gtm
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-NX.png
+/System/Library/G3D10/data/font/console-small.fnt
+/System/Library/G3D10/data/scene/CornellBox-empty-cyan-orange.Scene.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_vertex.glsl
+/System/Library/G3D10/data/shader/Film/Film_toneMap.glsl
+/System/Library/G3D10/data/shader/Light/Light.glsl
+/System/Library/G3D10/data/shader/Film/Film_FXAA_310.pix
+/System/Library/G3D10/data/shader/g3dmath.glsl
+/System/Library/G3D10/data/shader/Texture/Texture_copy.pix
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-PY.png
+/System/Library/G3D10/data/shader/BumpMap/BumpMap.glsl
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.vrt
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-PZ.png
+/System/Library/G3D10/data/model/cube/default.png
+/System/Library/G3D10/data/shader/LightingEnvironment/LightingEnvironment_environmentMapUniforms.glsl
+/System/Library/G3D10/data/ifs/sphere.ifs
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_AO.pix
+/System/Library/G3D10/data/scene/CornellBox-glossy.Scene.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_constants.glsl
+/System/Library/G3D10/data/shader/LightingEnvironment/LightingEnvironment_uniforms.glsl
+/System/Library/G3D10/data/scene/motion.Scene.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_render.pix
+/System/Library/G3D10/data/icon/tango.icn
+/System/Library/G3D10/data/shader/reconstructFromDepth.glsl
+/System/Library/G3D10/data/scene/featureTest.Scene.Any
+/System/Library/G3D10/data/scene/minecraft.Scene.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_minify.vrt
+/System/Library/G3D10/data/scene/CornellBox-water.Scene.Any
+/System/Library/G3D10/data/scene/CornellBox-spheres.Scene.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_depthOnly.vrt
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./mirrorbox.scn.any
+/System/Library/G3D10/data/shader/LightingEnvironment/LightingEnvironment_LightUniforms.glsl
+/System/Library/G3D10/data/scene/seymour.Scene.Any
+/System/Library/G3D10/data/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.pix
+/System/Library/G3D10/data/material/oldgirder/oldgirder.UniversalMaterial.Any
+/System/Library/G3D10/data/material/blackrubber/blackrubber.UniversalMaterial.Any
+/System/Library/G3D10/data/shader/Film/Film_bloomExpose.pix
+/System/Library/G3D10/data/scene/sponza.Scene.Any
+log.txt
+/System/Library/G3D10/data/shader/Texture/Texture.glsl
+/System/Library/G3D10/data/shader/GuiTheme/GuiTheme_render.vrt
+/System/Library/G3D10/data/shader/SkyboxSurface/SkyboxSurface_render.pix
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_gbuffer.vrt
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./studio.scn.any
+/System/Library/G3D10/data/scene/CornellBox-mirror.Scene.Any
+/System/Library/G3D10/data/shader/unlit.vrt
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_vertexHelpers.glsl
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_modulateBackground.vrt
+/System/Library/G3D10/data/shader/default.vrt
+/System/Library/G3D10/data/shader/GuiTheme/GuiTheme_render.pix
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_gbuffer.pix
+/System/Library/G3D10/data/shader/SkyboxSurface/SkyboxSurface_gbuffer.vrt
+/System/Library/G3D10/data/shader/SkyboxSurface/SkyboxSurface_gbuffer.pix
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./atcs.Scene.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_depthOnly.pix
+/System/Library/G3D10/data/scene/heightfield.Scene.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_depthPeel.pix
+/System/Library/G3D10/data/shader/SkyboxSurface/SkyboxSurface_render.vrt
+/System/Library/G3D10/data/model/cube/default.mtl
+/System/Library/G3D10/data/scene/atcs.Scene.Any
+/System/Library/G3D10/data/cubemap/whiteroom/whiteroom-PX.png
+/System/Library/G3D10/data/scene/sponzaWhite.Scene.Any
+/System/Library/G3D10/data/font/icon.fnt
+/System/Library/G3D10/data/shader/GaussianBlur/GaussianBlur_apply.pix
+/System/Library/G3D10/data/shader/depthPeel.glsl
+/System/Library/G3D10/data/shader/compatibility.glsl
+/System/Library/G3D10/data/scene/CornellBox.Scene.Any
+/System/Library/G3D10/data/material/metalcrate/metalcrate.UniversalMaterial.Any
+/System/Library/G3D10/data/shader/UniversalSurface/UniversalSurface_refract.pix
+/System/Library/G3D10/data/shader/Film/Film_composite.pix
+/Users/nigel/Dropbox/Programming/Assignments/Graphics/Lab3/recursive-remote/data-files/./ballpit.scn.any
+
